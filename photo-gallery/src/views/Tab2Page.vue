@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+        <ion-title>PHOTO GALLERY🖼️</ion-title>
       </ion-toolbar>
     </ion-header>
 
