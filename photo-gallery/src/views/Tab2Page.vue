@@ -8,15 +8,7 @@
 
 
     <ion-content :fullscreen="true">
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button @click="takePhoto()">
-      <ion-icon :icon="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-</ion-content>
-
-    <ion-content>
-  <ion-grid>
+    <ion-grid>
     <ion-row>
       <ion-col size="6" :key="photo.filepath" v-for="photo in photos">
         <ion-img :src="photo.webviewPath"></ion-img>
@@ -25,7 +17,13 @@
   </ion-grid>
 
   <!-- <ion-fab> markup  -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button @click="takePhoto()">
+      <ion-icon :icon="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
+
 
 
   </ion-page>
