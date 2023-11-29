@@ -78,4 +78,6 @@ const convertBlobToBase64 = (blob: Blob) =>
     
       photos.value = photosInPreferences;
     };
+    onMounted(loadSaved);
   };
+  
